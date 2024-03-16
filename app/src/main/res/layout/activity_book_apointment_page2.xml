@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#148AFF"
+
+    android:orientation="vertical"
+    tools:context=".BookApointmentPage2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@drawable/halfcurve">
+
+
+        <ImageView
+            android:layout_weight="2.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alwbg">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23dp"
+            android:textColor="#0482FF"
+            android:textStyle="bold"
+            android:text="Book Appointment"/>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="20dp"
+        android:src="@drawable/docutorimg"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:text="Vasudev Raut"/>
+
+
+    <RatingBar
+
+        android:progressBackgroundTint="@color/white"
+        android:progressTint="#FFA500"
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.50"
+        android:scaleY="0.50"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+
+                android:fontFamily="@font/armata"
+                android:text="In the above code snippet, I've set the width of the RatingBar to 100dp (density-independent pixels), which means it will have a fixed width of 100 pixels regardless of the device's screen density. You can adjust this value according to your design requirements."
+                android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp"
+
+            >
+
+
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Available Slot"
+            android:layout_marginStart="30dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical"
+            android:textStyle="bold">
+
+
+
+        </TextView>
+
+         <ImageView
+             android:id="@+id/choosedate"
+             android:layout_weight="4"
+             android:layout_width="match_parent"
+             android:layout_height="50dp"
+             android:src="@drawable/schedule_ap"/>
+
+        </LinearLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/available_slot"
+                android:layout_width="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="50dp"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Apointment"
+            android:textAlignment="center"
+            android:paddingStart="40dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:paddingEnd="40dp"
+            android:background="@drawable/spinnerbg"
+            android:layout_gravity="center_horizontal"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

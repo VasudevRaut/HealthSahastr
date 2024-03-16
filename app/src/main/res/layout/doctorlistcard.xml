@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:background="#B06E359B"
+    android:layout_marginBottom="20dp"
+    android:id="@+id/doctorlistcard"
+    android:layout_height="wrap_content">
+
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="clip_vertical"
+        android:src="@drawable/profilelefttop"
+        android:layout_weight="2">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. Vasudev Raut"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                ></TextView>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <!--                <TextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:textColor="@color/white"-->
+    <!--                    android:text="4.8"/>-->
+
+                <RatingBar
+                    android:layout_marginStart="5dp"
+                    android:progressBackgroundTint="@color/white"
+                    android:progressTint="#FFA500"
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:clipToPadding="false"
+                    android:clipChildren="false"
+                    style="?android:attr/ratingBarStyleSmall"
+
+
+                    />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:layout_marginStart="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1/19/24"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+<!--        <ImageView-->
+<!--            android:layout_weight="2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:src="@drawable/callicon"-->
+<!--            android:layout_height="40dp">-->
+
+<!--        </ImageView>-->
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13dp"
+        android:textColor="@color/white"
+        android:text="General Hospital 471c, Menu mahal mumbai"/>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="#FF0000"-->
+<!--            android:layout_marginEnd="10dp"-->
+<!--            android:text="Closed"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:text="open 5 PM"/>-->
+
+
+
+
+<!--    </LinearLayout>-->
+
+<!--    <TextView-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:background="@drawable/horizontalnewline"-->
+<!--        android:layout_height="5dp">-->
+
+<!--    </TextView>-->
+    </LinearLayout>
+
+
+</LinearLayout>
