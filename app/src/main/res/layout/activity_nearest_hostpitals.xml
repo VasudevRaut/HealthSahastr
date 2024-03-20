@@ -81,14 +81,6 @@
 
 
 
-<!--    <TextView-->
-<!--        android:id="@+id/label"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_margin="20dp"-->
-<!--        android:padding="20dp"-->
-<!--        android:text=""-->
-<!--        android:textColor="@color/black" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/hospitallistrecycler"

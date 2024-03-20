@@ -2,6 +2,7 @@ package com.example.healthshastra.NearestHospital;
 
 import android.Manifest;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.location.Address;
@@ -672,7 +673,100 @@ public class NearestHostpitals extends AppCompatActivity implements OnMapReadyCa
 
 
 
-//    private void getData1(){
+    private void getData1(){
+
+
+
+
+
+        final String sharedPreferencesFileTitle = "health";
+
+
+        SharedPreferences sharedPreferences = getSharedPreferences(sharedPreferencesFileTitle, MODE_PRIVATE);
+        String number  = sharedPreferences.getString("number","");
+//        editor.putString("pass", emp_pass);
+//        editor.putString("gender", data);
+
+
+
+//
+//
+//        Call<List<DoctorData>> fetch_call= ApiControlller
+//                .getInstance()
+//                .fetchProfileApi()
+//                .getappointmentData(number);
+//
+//        fetch_call.enqueue(new Callback<List<DoctorData>>() {
+//            @Override
+//            public void onResponse(Call<List<DoctorData>> call, Response<List<DoctorData>> response) {
+//
+//                List<DoctorData> data = response.body();
+////                data_list = new ArrayList<>();
+//                if(data!=null) {
+//
+//
+//
+//                        for(DoctorData markers : data)
+//                        {
+//
+//                            LatLng latLng2 = new LatLng(Double.parseDouble(markers.getLat()), Double.parseDouble(markers.getLongi()));
+////                            map.addMarker(new MarkerOptions().position(latLng2).title(owner.getEv_station_name()).icon(BitmapDescriptorFactory.fromResource(R.drawable.carev)));
+////                            Marker marker = new Marker((zzad) new MarkerOptions());
+//
+//
+////                            TextView label  = findViewById(R.id.label);
+////                          label.setText(""+doc);
+////                            Toast.makeText(MainActivity.this, ""+doc.get("EV_Station"), Toast.LENGTH_SHORT).show();
+//
+//                            double red = calculateDistance(lati,longi,latLng2.latitude,latLng2.longitude);
+////                            Toast.makeText(MainActivity.this, "REdius :"+red, Toast.LENGTH_SHORT).show();
+//
+//                            if(red<50000)
+//                            {
+////                                mp.put(owner.getOwner_email(),owner);
+//                                Marker marker = map.addMarker(new MarkerOptions()
+//                                        .position(latLng2)
+//                                        .title(markers.getName())
+//                                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.hospitalimg)));
+//
+//                                // Tag the marker with the document ID to identify it later
+//                                marker.setTag(doc.getId());
+//                            }
+//
+//
+//
+//
+//
+//                        }
+//
+//
+//
+////                    Toast.makeText(SignUp.this, data, Toast.LENGTH_SHORT).show();
+//                }
+//                else {
+////                    Toast.makeText(getApplicationContext(), "Data Not available !", Toast.LENGTH_SHORT).show();
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<List<DoctorData>> call, Throwable t) {
+////                Toast.makeText(getApplicationContext(), "Something went wrong ! Please try again later !", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //        firebaseFirestore.collection("Owner")
 //                .get()
 //                .addOnSuccessListener(new OnSuccessListener<QuerySnapshot>() {
@@ -698,7 +792,7 @@ public class NearestHostpitals extends AppCompatActivity implements OnMapReadyCa
 //                                Marker marker = map.addMarker(new MarkerOptions()
 //                                        .position(latLng2)
 //                                        .title(owner.getEv_station_name())
-//                                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.custom)));
+//                                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.hospitalimg)));
 //
 //                                // Tag the marker with the document ID to identify it later
 //                                marker.setTag(doc.getId());
@@ -718,14 +812,14 @@ public class NearestHostpitals extends AppCompatActivity implements OnMapReadyCa
 //                    }
 //                });
 //
-//
-//
-//
-//
-//
-//
-//
-//    }
+
+
+
+
+
+
+
+    }
 //
 //    private void init(){
 //        firebaseAuth = FirebaseAuth.getInstance();
